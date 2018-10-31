@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/contact_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <ImageView
+                android:id="@+id/contact_tmb"
+                android:layout_width="@dimen/contact_actions_size"
+                android:layout_height="@dimen/contact_actions_size"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding"
+                android:src="@drawable/user" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/contact_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/contact_item_height"
+                    android:layout_marginLeft="@dimen/paddingLeft"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/font_name"
+                    android:textStyle="bold"
+                    tools:text="Name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/contact_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/title_text_size"
+                    android:layout_marginLeft="@dimen/paddingLeft"
+                    android:layout_toRightOf="@+id/contact_tmb"
+                    android:maxLines="1"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/font_age"
+                    tools:text="age" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"></LinearLayout>
+
+</LinearLayout>

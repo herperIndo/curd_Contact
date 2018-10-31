@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Crud_Contact</string>
+    <string name="main_tittle">All Contact</string>
+    <string name="Delete">Delete</string>
+    <string name="Edit">Edit</string>
+    <string name="Upload">Upload</string>
+
+
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Toolbar_height"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Height_Avatar_Edit"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/ivAvatarEdit"
+            android:layout_width="@dimen/Avatar_Edit"
+            android:layout_height="@dimen/Avatar_Edit"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/nameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivAvatarEdit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding"
+            android:textStyle="bold"
+            android:text="Name"
+            android:textSize="@dimen/font_tittle_big" />
+
+        <TextView
+            android:id="@+id/idEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEdit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding"
+            android:textColor="@color/white_soft"
+            android:text="Name"
+            android:textSize="@dimen/font_age" />
+
+        <TextView
+            android:id="@+id/ageEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEdit"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white_soft"
+            android:layout_marginTop="@dimen/padding"
+            android:text="Name"
+            android:textSize="@dimen/font_age" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/update"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/padding"-->
+            <!--android:layout_below="@+id/ageEdit"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/edit_button"/>-->
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/update"
+            android:layout_width="@dimen/width_button"
+            android:layout_height="@dimen/height_button"
+           android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:layout_marginBottom="@dimen/padding">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Edit"
+                android:textSize="@dimen/font_tittle"
+                android:layout_gravity="center"
+                android:textColor="@color/white_soft"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_Button"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padding"
+            android:padding="@dimen/padding"
+            android:layout_width="@dimen/width_button"
+            android:layout_height="@dimen/height_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/delete_button"
+            android:layout_marginBottom="@dimen/padding">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Delete"
+                android:textSize="@dimen/font_tittle"
+                android:layout_gravity="center"
+                android:textColor="@color/white_soft"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
